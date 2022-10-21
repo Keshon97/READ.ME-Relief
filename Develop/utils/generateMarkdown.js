@@ -1,45 +1,64 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) {
+  if(license) {
+    return //link to license , not sure if need one for all or need one for each. Regardless think i need to call render license link here.
+  }
+}
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
+// links for the licenses
+function renderLicenseLink(license) {
+  if (license === 'MIT') {
+    return `https://opensource.org/licenses/MIT`
+  }
+  if (license === 'Mozilla') {
+    return `https://www.mozilla.org/en-US/MPL/2.0/`
+}
+
+  if (license === 'ISC'){
+    return `https://opensource.org/licenses/ISC`
+  }
+  if (license === 'IBM')
+    return `https://www-40.ibm.com/software/sla/sladb.nsf/sla/software_policies/`
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  //
+}
 
-// TODO: Create a function to generate markdown for README
+// function to create markdown for readme.
 function generateMarkdown(data) {
   return `# ${data.title}
-    ##License:
+    //table of contents for each section(currently the links are not working and is not generating properly)
     ##Table of Contents
-    // [contents](#content)
-    [Descritpion](#Description)
-    [Installation](#Installation)
-    [Usage](#Usage)
-    [License](#License)
-    [Contributing](#Contributing)
-    [Tests](#Tests)
-    [Questions](#Questions)
+    [Descritpion](#description)
+    [Installation](#installation)
+    [Usage](#usage)
+    [License](#license)
+    [Contributing](#contributing)
+    [Tests](#tests)
+    [Questions](#questions)
 
-    ##Description
+    //Uses the user input in order to fill out each section
+    ##Description:
     ${data.description}
-    ##Installation
+    ##Installation:
     ${data.installation}
-    ##Usage
+    ##Usage:
     ${data.usage}
-    ##License
+    ##License:
     ${data.license}
-    ##Contributing
+    ##Contributing:
     ${data.contributing}
-    ##Tests
+    ##Tests:
     ${data.tests}
-    ##Questions
+    ##Questions:
+    //need to add url for github
     ${data.username}
     ${data.email}
 `
 };
-
+//exports this file in order to be used for index.js
 module.exports = generateMarkdown;
