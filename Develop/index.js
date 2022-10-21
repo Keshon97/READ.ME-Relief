@@ -1,12 +1,8 @@
-// TODO: Create an array of questions for user input
-// THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents (href), Installation, Usage, License, Contributing, Tests, and Questions
-// TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
 
 //An array of objects for my questions.
-//need to add validatation.
 const questions = [
     {
         type: 'input',
