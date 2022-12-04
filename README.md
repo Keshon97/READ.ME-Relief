@@ -17,7 +17,7 @@ README Relief is a command line README generator for people who do not want to d
 
 ## Usage
 
-<https://drive.google.com/file/d/1A5lGTpfhBCym5OIkvUGF5v8IK2r_2TWx/view>
+(Link to video)[https://drive.google.com/file/d/1A5lGTpfhBCym5OIkvUGF5v8IK2r_2TWx/view]
 ---
 
 
